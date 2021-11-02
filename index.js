@@ -263,7 +263,6 @@ function grade(score){
 }
 
 
-
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
 //Vowel Counter - How many vowels are there?
@@ -277,8 +276,16 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter(str) {
+  let newStr = str.toLowerCase();
+  let counter = 0;
+  for(let i=0;i<newStr.length;i++){
+    let character = newStr.charAt(i);
+    if(character === 'a' || character === 'e' || character === 'i' || character === 'o' || character === 'u'){
+      counter++;
+    }
+  }
+  return counter;
 }
 
 
